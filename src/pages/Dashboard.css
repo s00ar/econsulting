@@ -1,0 +1,44 @@
+.dashboard {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+    height: 60vh; /* Ocupa toda la altura de la ventana */
+  }
+  
+  .dashboard-header {
+    padding: 10px 20px;
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+  }
+  
+  .widgets {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    padding: 0 20px;
+  }
+  
+  .widget {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .widget:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  
+  .widget h2 {
+    color: #333;
+  }
+  
+  .widget p {
+    color: #666;
+    font-size: 16px;
+  }
+  
