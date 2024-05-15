@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Ai from './pages/Ai.jsx';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
           <Route path="/about" element={
             <ProtectedRoute>
               <About/>
+            </ProtectedRoute>
+          } />
+          <Route path="/ai" element={
+            <ProtectedRoute>
+              <Ai />
             </ProtectedRoute>
           } />
           <Route path="/contact" element={

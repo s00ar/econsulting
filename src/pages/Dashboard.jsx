@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dashboard.css';  // Importamos el CSS para estilos
+import Stack from 'react-stackai';
 
 const Dashboard = () => {
   return (
@@ -21,6 +22,7 @@ const Dashboard = () => {
             </iframe>
         </div>
       </div>
+      <Stack project="https://www.stack-ai.com/embed/5b53ef14-204a-45cf-b5d0-7a9315bd8f5d/1c764b73-6a85-4e52-af2e-b4792c24db8b/662e9d7f1b60bdaf9dd2e8fb" />
     </div>
   );
 }

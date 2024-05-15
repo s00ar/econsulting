@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Button, Container, Row, Col, Card, Image } from 'react-bootstrap';
+import Stack from 'react-stackai';
 
 const Contact = () => {
   return (
@@ -65,6 +66,7 @@ const Contact = () => {
           <a href="https://www.instagram.com/elevenconsulting.com.ar/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
         </Col>
       </Row>
+      <Stack project="https://www.stack-ai.com/embed/5b53ef14-204a-45cf-b5d0-7a9315bd8f5d/1c764b73-6a85-4e52-af2e-b4792c24db8b/662e9d7f1b60bdaf9dd2e8fb" />
     </Container>
   );
 };

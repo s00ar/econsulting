@@ -20,16 +20,16 @@ export const NavigationBar = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <LinkContainer to="/dashboard">
-                        <Nav.Link>Dashboard</Nav.Link>
+                        <Nav.Link>Panel Principal</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/about">
-                        <Nav.Link>Sobre Nosotros</Nav.Link>
-                    </LinkContainer>
-                    <LinkContainer to="/contact">
-                        <Nav.Link>Contáctanos</Nav.Link>
+                        <Nav.Link>Metricas</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/ai">
                         <Nav.Link>Asistente Inteligente</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/contact">
+                        <Nav.Link>Contáctanos</Nav.Link>
                     </LinkContainer>
                     {isAuthenticated ? (
                         <Button onClick={handleLogout} variant="outline-danger">Logout</Button>
@@ -40,6 +40,7 @@ export const NavigationBar = () => {
                     )}
                 </Nav>
             </Navbar.Collapse>
+            
         </Navbar>
     );
 };
